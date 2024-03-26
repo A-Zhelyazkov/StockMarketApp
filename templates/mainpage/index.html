@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+    <main>
+        <div class="content">
+            <div class="left-content">
+                <h1>Welcome to Portfolio Management</h1>
+                <p>This app will help you manage your investment portfolios effectively!</p>
+                <button type="button" class="btn btn-primary btn-lg">Get Started</button><br>OR<br>
+                <a href="#">Already have an account?</a>
+            </div>
+            <div class="right-content">
+                <img src="{% static 'images/index_pic.PNG' %}" alt="Portfolio Management App" class="app-image">            </div>
+        </div>
+    </main>
+{% endblock maincontent %}
