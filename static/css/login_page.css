@@ -1,0 +1,35 @@
+.login-form-container {
+    width: 100%;
+    max-width: 600px; /* Set a max-width for the container */
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 100px; /* Add top margin to move the form down */
+}
+.login-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+.login-image {
+    text-align: center; /* Center the image */
+}
+
+.right-content {
+    flex: 1; /* Occupy remaining space */
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center vertically */
+}
+
+.app-image {
+    width: 100%; /* Adjust image width as needed */
+    max-width: 300px; /* Set max-width to avoid stretching */
+    margin-right: 20px; /* Add spacing between text and image */
+}
+

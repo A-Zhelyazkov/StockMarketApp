@@ -1,0 +1,30 @@
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.left-content {
+    text-align: center; /* Center text horizontally */
+    margin-right: 20px; /* Add margin to create space between text and image */
+}
+
+.right-content {
+    text-align: center; /* Center text horizontally */
+}
+
+.app-image {
+    width: 100%; /* Adjust image width as needed */
+    max-width: 500px; /* Set max-width to make the image bigger */
+}
+
+.already-have-account {
+    color: #000000;
+    text-decoration: none;
+}
+
+.already-have-account:hover {
+    color: #000000;
+}

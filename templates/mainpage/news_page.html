@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+<main>
+    <link rel="stylesheet" href="{% static 'css/news_page.css' %}">
+    <h1 style="color: black; text-align: center;">Stock Market News</h1>
+    <div class="content">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="news-item">
+                    <h2 class="news-title">Company XYZ to Release Quarterly Earnings</h2>
+                    <p class="news-description">Company XYZ is scheduled to release its quarterly earnings report next week. Analysts are optimistic about the company's performance.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news-item">
+                    <h2 class="news-title">Market Sentiment Turns Bullish</h2>
+                    <p class="news-description">After a period of uncertainty, market sentiment has turned bullish as investors gain confidence in the economic recovery.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news-item">
+                    <h2 class="news-title">Tech Stocks Lead Market Rally</h2>
+                    <p class="news-description">Technology stocks surged today, leading a broad market rally. Investors are betting on continued growth in the sector.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="news-item">
+                    <h2 class="news-title">Federal Reserve Holds Interest Rates Steady</h2>
+                    <p class="news-description">The Federal Reserve announced today that it will maintain its current interest rate policy, citing ongoing economic uncertainties.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news-item">
+                    <h2 class="news-title">Oil Prices Spike Amid Supply Concerns</h2>
+                    <p class="news-description">Oil prices jumped today as concerns over supply disruptions intensified. Geopolitical tensions in key oil-producing regions are driving the increase.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news-item">
+                    <h2 class="news-title">New Regulations Impacting Financial Markets</h2>
+                    <p class="news-description">Recent regulatory changes are expected to have a significant impact on financial markets. Analysts warn of increased volatility.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock maincontent %}

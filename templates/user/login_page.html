@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block maincontent %}
-
-   <body>
+<body>
+        <link rel="stylesheet" href="{% static 'css/login_page.css' %}">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center align-items-center"> <!-- Centering the content -->
             <div class="col-md-6">
                 <form class="login-form">
                     <div class="form-group">
@@ -17,10 +17,11 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Login</button>
-                        <p class="text-center mt-3">Don't have an account? <a href="#">Sign up</a></p>                </form>
+                    <p class="text-center mt-3">Don't have an account? <a href="#">Sign up</a></p>
+                </form>
             </div>
             <div class="col-md-6">
-                <div class="login-image">
+                <div class="login-image text-center">
                     <img src="https://via.placeholder.com/400" alt="Login Image" class="img-fluid">
                 </div>
             </div>

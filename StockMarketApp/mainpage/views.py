@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def index_view(request):
+    return render(request, 'mainpage/index.html')
+
+
+def news_view(request):
+    return render(request, 'mainpage/news_page.html')

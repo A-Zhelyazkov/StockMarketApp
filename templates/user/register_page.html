@@ -3,6 +3,7 @@
 {% block maincontent %}
 
    <body>
+   <link rel="stylesheet" href="{% static 'css/register_page.css' %}">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -21,15 +22,16 @@
                         <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Register</button>
-                    <p class="text-center mt-3">Already have an account? <a href="{% url 'login_user' %}">Login</a></p> <!-- Added hyperlink to the login page -->
+                    <p class="text-center mt-3">Already have an account? <a href="{% url 'login_user' %}" class="already-have-account">Login</a></p>
                 </form>
             </div>
             <div class="col-md-6">
                 <div class="register-image">
-                    <img src="https://via.placeholder.com/400" alt="Register Image" class="img-fluid">
+                    <img src="https://via.placeholder.com/400" alt="Register Image" class="img-fluid app-image">
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 {% endblock maincontent %}
