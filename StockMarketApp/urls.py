@@ -7,5 +7,5 @@ urlpatterns = [
     path('', include('StockMarketApp.mainpage.urls')),
     path('stocks/', include('StockMarketApp.stocks.urls')),
     path('portfolio/', include('StockMarketApp.portfolio.urls')),
-    path('users/', include('StockMarketApp.users.urls')),
+    path('user/', include('StockMarketApp.users.urls')),
 ]

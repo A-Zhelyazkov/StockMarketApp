@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+<body>
+<main>
+    <link rel="stylesheet" href="{% static 'css/edit_profile_page.css' %}">
+    <div class="profile">
+        <div class="profile-img">
+            <img src="{% static 'images/no pfp.png' %}" alt="Profile Picture">
+            <input type="file" name="profile_picture" accept="image/*">
+        </div>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="info-box">
+                <span class="info-label">Email:</span>
+                <input type="email" name="email" value="example@example.com">
+            </div>
+            <div class="info-box">
+                <span class="info-label">First Name:</span>
+                <input type="text" name="first_name" value="John">
+            </div>
+            <div class="info-box">
+                <span class="info-label">Last Name:</span>
+                <input type="text" name="last_name" value="Doe">
+            </div>
+            <div class="info-box">
+                <span class="info-label">Date of Birth:</span>
+                <input type="date" name="date_of_birth" value="1990-01-01">
+            </div>
+            <div class="button-container">
+                <button type="submit" class="save-button">Save Changes</button>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+{% endblock maincontent %}

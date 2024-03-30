@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+    <body>
+    <main>
+        <link rel="stylesheet" href="{% static 'css/profile_page.css' %}">
+        <div class="profile">
+            <div class="profile-img">
+                <img src="{% static 'images/no pfp.png' %}" alt="Profile Picture">
+            </div>
+            <div class="info-box">
+                <span class="info-label">Email:</span>
+                <p>example@example.com</p>
+            </div>
+            <div class="info-box">
+                <span class="info-label">Balance:</span>
+                <p>$1000</p>
+            </div>
+            <div class="info-box">
+                <span class="info-label">First Name:</span>
+                <p>John</p>
+            </div>
+            <div class="info-box">
+                <span class="info-label">Last Name:</span>
+                <p>Doe</p>
+            </div>
+            <div class="info-box">
+                <span class="info-label">Date of Birth:</span>
+                <p>1990-01-01</p>
+            </div>
+            <div class="button-container">
+                <a href="{% url 'edit_profile_details' pk=3 %}" class="edit-button">Edit</a>
+                <a href="{% url 'delete_profile' pk=3 %}" class="delete-button">Delete</a>
+            </div>
+        </div>
+    </main>
+</body>
+{% endblock maincontent %}

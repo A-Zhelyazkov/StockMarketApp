@@ -19,7 +19,7 @@
             <a href="{% url 'home_page' %}">Home</a>
             {% endif %}
             {% if request.user.is_authenticated %}
-            <a href="#">Profile</a>
+            <a href="{% url 'profile_details' pk=3 %}">Profile</a>
             <a href="#">Portfolio</a>
             <a href="#">Market</a>
             {% else %}

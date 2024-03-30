@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+<body>
+<main>
+    <link rel="stylesheet" href="{% static 'css/delete_profile_page.css' %}">
+    <div class="delete-container">
+        <div class="delete-text">
+            <p><strong>Are you sure you want to delete your account?</strong></p>
+            <p>Please make sure that you have withdrawn your balance before deleting.</p>
+        </div>
+        <div class="button-container">
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" class="delete-button">Delete</button>
+                <a href="{% url 'home_page' %}" class="cancel-button btn btn-primary">No</a>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+{% endblock maincontent %}

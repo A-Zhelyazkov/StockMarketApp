@@ -8,8 +8,9 @@
         <div class="left-content">
             <h1>Welcome to Portfolio Management</h1>
             <p>This app will help you manage your investment portfolios effectively!</p>
-            <button type="button" class="btn btn-primary btn-lg">Get Started</button><br>OR<br>
-            <a href="#" class="already-have-account">Already have an account?</a>
+            <a href="{% url 'register_user' %}" class="btn btn-primary btn-lg">Get Started</a>
+            <br>OR<br>
+            <a href="{% url 'login_user' %}" class="already-have-account">Already have an account?</a>
         </div>
         <div class="right-content">
             <img src="{% static 'images/index_pic.PNG' %}" alt="Portfolio Management App" class="app-image">

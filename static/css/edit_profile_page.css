@@ -1,0 +1,74 @@
+/* Override conflicting styles from base.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+}
+
+/* Update the CSS for the profile image container and form */
+.profile-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+}
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Reduce margin */
+}
+.profile form {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* Update the CSS for the info boxes */
+.info-box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info-box .info-label {
+    margin-right: 10px;
+    font-weight: bold;
+    width: 120px;
+}
+
+.info-box input {
+    flex: 1;
+}
+
+/* Update the CSS for the button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #007bff;
+    color: #fff;
+}
