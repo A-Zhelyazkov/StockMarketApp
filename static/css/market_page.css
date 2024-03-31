@@ -1,0 +1,63 @@
+/* Style for the stock container */
+.stock-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    max-width: 1000px; /* Set maximum width for the container */
+    max-height: 600px; /* Set maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    padding: 20px; /* Add padding to the container */
+}
+
+/* Style for each stock */
+.stock {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 200px; /* Set width for each stock */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Style for stock information */
+.stock-info {
+    margin-bottom: 10px;
+}
+
+/* Style for stock name */
+.stock-name {
+    margin: 0;
+}
+
+/* Style for stock price */
+.stock-price {
+    margin: 5px 0;
+}
+
+/* Style for stock volume */
+.stock-volume {
+    margin: 5px 0;
+}
+
+/* Style for stock move */
+.stock-move {
+    margin: 5px 0;
+}
+
+/* Style for buy button */
+.buy-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Hover effect for buy button */
+.buy-button:hover {
+    background-color: #0056b3;
+}

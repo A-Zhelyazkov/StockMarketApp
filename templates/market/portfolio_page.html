@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+<body>
+    <link rel="stylesheet" href="{% static 'css/portfolio_page.css' %}">
+    <div class="container">
+        <div class="portfolio-heading">Portfolio</div>
+        <div class="portfolio-details">
+            <div class="balance">Balance: $2000</div>
+            <div class="holdings">Total Holdings: $5000</div>
+        </div>
+        <ul class="stocks-list">
+            <li class="stock-item">Stock: AAPL | Shares: 100 | Price: $150</li>
+            <li class="stock-item">Stock: GOOGL | Shares: 50 | Price: $2500</li>
+            <li class="stock-item">Stock: MSFT | Shares: 75 | Price: $300</li>
+        </ul>
+    </div>
+</body>
+{% endblock maincontent %}

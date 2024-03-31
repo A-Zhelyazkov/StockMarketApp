@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to bottom, #8a2be2, #007bff);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.portfolio-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Decrease margin-bottom */
+    margin-top: 20px; /* Add margin-top */
+}
+
+.portfolio-details {
+    margin-bottom: 20px;
+    margin-top: 10px; /* Add margin-top */
+}
+
+.balance,
+.holdings {
+    font-size: 20px;
+    margin-bottom: 10px; /* Decrease margin-bottom */
+}
+
+.stocks-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stock-item {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    line-height: 1;
+}
